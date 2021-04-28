@@ -1,0 +1,29 @@
+body { background-color: #0C120C !important; }
+h1 {color: #708D81; }
+p { color: honeydew; }
+
+
+/* Too tired to figure whatever this guy on StackOverflow did so I'm just keeping this here until I figure something out */
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    align-items: center;
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;    /* vertical alignment of the inline element */
+    height: 100%;
+}
+  
+  .vertical-center > .container {
+    max-width: 100%;
+  
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+                             /* reset the font property */
+    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
