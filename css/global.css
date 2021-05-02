@@ -50,6 +50,9 @@ a {
 .dark a:hover {
     color: #9EFFA6;
 }
+.dark #gh {
+    filter: invert(100%);
+}
 
 #darkButton {
     background: none;
