@@ -15,12 +15,51 @@
 </head>
 
 <body>
+    
+    <!-- Start of the main navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <!-- Start of dropdown (from Bootstrap v5 documentation) -->
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Financial Calculators</a></li>
+                                    <li><a class="dropdown-item" href="./react-task-tracker">React Task Tracker</a></li>
+                                    <li><a class="dropdown-item" href="https://napstablook.com" target="_blank">napstablook.com</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <!-- End of dropdown -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/kimjustind" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <button id="darkButton" onclick="darkMode()"><img src="imgs/sun.svg" alt="light"></button>
+            </div>
+        </div>
+    </nav>
+    <!-- End of the main navigation bar -->
+
     <div class="vertical-center container">
         <div class="row text-left">
             <div class="col md-auto">
                 <h1>404'd</h1>
                 <p>you messed up</p>
-                <p>or i did. if i did then contact me on discord.</p>
+                <p>or i did. if i did then email me at <a href="mailto:kimjustind@gmail.com">kimjustind@gmail.com</a>.</p>
                 <p>Discord: Very#1337</p>
             </div>
         </div>
