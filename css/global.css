@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Open+Sans:wght@350&display=swap');
 
 body {
-    background-color: #98c4dd !important; 
+    background-color: #98c4dd !important;
 }
 
 h1 {
@@ -73,4 +73,13 @@ a {
     min-height: 94vh;
     display: flex;
     align-items: center;
+}
+
+#mobileshow { 
+    display:none; 
+}
+@media screen and (max-width: 767px) {
+    #mobileshow { 
+        display:inline-block;
+    }
 }
