@@ -1,29 +1,73 @@
-body { background-color: #0C120C !important; }
-h1 {color: #708D81; }
-p { color: white; }
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Open+Sans:wght@300&display=swap');
 
+body {
+    background-color: #98c4dd !important; 
+}
 
-/* Too tired to figure whatever this guy on StackOverflow did so I'm just keeping this here until I figure something out */
+h1 {
+    color: #00586e;
+    font-family: 'Antonio', sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px !important;
+    color: #00586e;
+}
+
+p {
+    color: #002129;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    color: #F2CEE6;
+}
+
+.btn:focus {
+    border: none !important;
+}
+
+.emoji {
+    font-size: 100px;
+}
+
+.dark {
+    background-color: #0D1B1E !important;
+}
+.dark h1 {
+    color: #E8DCB9;
+}
+.dark h2 {
+    color: #E8DCB9;
+}
+.dark p {
+    color: white;
+}
+.dark a {
+    color: #C3DBC5;
+}
+.dark a:hover {
+    color: #9EFFA6;
+}
+
+#darkButton {
+    background: none;
+    border: none;
+}
+
+#darkButton img {
+    filter: invert(100%);
+}
+
+#darkButton img:hover {
+    filter: invert(80%);
+    transition: filter 0.5s;
+}
+
 .vertical-center {
-    min-height: 100%;
-    min-height: 100vh;
-  
+    min-height: 94%;
+    min-height: 94vh;
     display: flex;
     align-items: center;
-}
-
-.vertical-center:before {    /* create a full-height inline block pseudo=element */
-    content: " ";
-    display: inline-block;
-    vertical-align: middle;    /* vertical alignment of the inline element */
-    height: 100%;
-}
-  
-  .vertical-center > .container {
-    max-width: 100%;
-  
-    display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
-                             /* reset the font property */
-    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
