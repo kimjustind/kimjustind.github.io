@@ -24,8 +24,9 @@ a {
     color: #F2CEE6;
 }
 
-.btn:focus {
-    border: none !important;
+.btn {
+    width: 200px
+    height: 200px;
 }
 
 .emoji {
