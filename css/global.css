@@ -78,6 +78,11 @@ a {
 
 #darkButton  {
     filter: sepia(100%);
+    filter: invert(100%);
+}
+
+.dark #darkButton {
+    filter: sepia(100%);
 }
 
 .navbar {
