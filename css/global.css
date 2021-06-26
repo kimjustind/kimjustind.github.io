@@ -3,12 +3,24 @@
 * { box-sizing: border-box; }
 body { background-color: #D5E7F1 !important; }
 
+@keyframes slideleft {
+    from {
+        transform: translateX(-10px);
+        opacity: 0.2;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* Text stuff */
 h1 {
     color: #00586e;
     font-family: 'Antonio', sans-serif;
     letter-spacing: 2px;
     padding-bottom: 10px;
+    animation: slideleft 0.6s ease-in-out;
 }
 h2 {
     font-family: 'Antonio', sans-serif;
@@ -49,6 +61,11 @@ hr {
     margin-bottom: 10px;
     width: 200px;
     height: 200px;
+
+}
+.btn:hover {
+    scale: 1.1;
+    transition: 500ms;
 }
 
 .emoji {
@@ -127,7 +144,7 @@ hr {
         height: 300px;
     }
     .img {
-        height: 300px !important;
+        height: 200px !important;
     }
     .emoji {
         font-size: 180px;
